@@ -4,14 +4,16 @@ Based on https://www.aclweb.org/anthology/D19-5403.pdf
 
 ## Architecture
 
-1. clustering:
+1. clustering
+	* clustering: {collection of sentences from all articles} -> 
 	* embeds using NSP
 	* affinity propagation using TF-IDF cosine similarity
 	* methods to synchronise dates
+	* use from `purano`
 2. dates extraction
 	* for each sentence extract the date the event it refers to took place
-3. sentence generation:
-	*  low-cost  MSC-system  by  Filippova(2010)
+3. sentence generation
+	* low-cost  MSC-system  by  Filippova(2010)
 	* cluster = {date, sentence} -> sentence
 	* in Russian here would be trubles: pymorphy, lemmatization, 
 4. sentence scoring and selection
@@ -27,3 +29,5 @@ Based on https://www.aclweb.org/anthology/D19-5403.pdf
 ## Useful links
 https://github.com/natasha/natasha/tree/master/natasha
 https://github.com/IlyaGusev/purano
+
+<img src="https://latex.codecogs.com/gif.latex?\{set of ...\} \rightarrow clusters" />

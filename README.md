@@ -3,10 +3,10 @@
 Based on https://www.aclweb.org/anthology/D19-5403.pdf
 
 ## Architecture
-
+0. sentence embeddings
+	* embed sentences using NSP
 1. clustering
 	* clustering maps `{collection of all sentences from all articles}` to `{collection of grouped sentences i.e. clusters}`
-	* embeds using NSP
 	* affinity propagation using TF-IDF cosine similarity
 	* methods to synchronise dates
 	* use from `purano`
@@ -28,5 +28,6 @@ Based on https://www.aclweb.org/anthology/D19-5403.pdf
 * IlyaGusev/rnnmorph or pymorphy to split sentences into POS
 
 ## Useful links
-https://github.com/natasha/natasha/tree/master/natasha
-https://github.com/IlyaGusev/purano
+* https://github.com/natasha/natasha/tree/master/natasha
+* https://github.com/IlyaGusev/purano
+* https://github.com/julmaxi/Abstractive-Timeline-Summarization

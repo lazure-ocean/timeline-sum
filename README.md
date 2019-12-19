@@ -8,15 +8,17 @@ Based on https://www.aclweb.org/anthology/D19-5403.pdf
 	* embeds using NSP
 	* affinity propagation using TF-IDF cosine similarity
 	* methods to synchronise dates
-2. sentence generation:
+2. dates extraction
+	* for each sentence extract the date the event it refers to took place
+3. sentence generation:
 	*  low-cost  MSC-system  by  Filippova(2010)
 	* cluster = {date, sentence} -> sentence
 	* in Russian here would be trubles: pymorphy, lemmatization, 
-3. sentence scoring and selection
+4. sentence scoring and selection
 	* 3 steps
-4. evaluation
+5. evaluation
 
-### Additional: 
+### Additional
 * seq2seq to make sentences grammatical
 * Next sentence prediction
 * natasha/razdel to split into sentences

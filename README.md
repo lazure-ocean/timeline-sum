@@ -14,7 +14,7 @@ Based on https://www.aclweb.org/anthology/D19-5403.pdf
 	* dates extraction maps `{collection of clusters}` to `{collection of dates}`
 	* for each sentence extract the date the event it refers to took place
 3. sentence generation
-	* sentence generation maps `{collection of pairs (sentence, date)}` to `{collection of sentences}`
+	* sentence generation maps `{collection of pairs (cluster, date)}` to `{collection of sentences}`
 	* low-cost  MSC-system  by  Filippova(2010)
 	* in Russian here would be trubles: pymorphy, lemmatization, 
 4. sentence scoring and selection

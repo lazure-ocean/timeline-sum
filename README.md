@@ -5,16 +5,16 @@ Based on https://www.aclweb.org/anthology/D19-5403.pdf
 ## Architecture
 
 1. clustering
-	* clustering maps {collection of all sentences from all articles} to {collection of grouped sentences i.e. clusters}
+	* clustering maps `{collection of all sentences from all articles}` to `{collection of grouped sentences i.e. clusters}`
 	* embeds using NSP
 	* affinity propagation using TF-IDF cosine similarity
 	* methods to synchronise dates
 	* use from `purano`
 2. dates extraction
-	* dates extraction maps {collection of clusters} to {collection of dates}
+	* dates extraction maps `{collection of clusters}` to `{collection of dates}`
 	* for each sentence extract the date the event it refers to took place
 3. sentence generation
-	* sentence generation maps {collection of pairs (sentence, date)} to sentence
+	* sentence generation maps `{collection of pairs (sentence, date)}` to `{collection of sentences}`
 	* low-cost  MSC-system  by  Filippova(2010)
 	* in Russian here would be trubles: pymorphy, lemmatization, 
 4. sentence scoring and selection

@@ -20,7 +20,7 @@ Based on https://www.aclweb.org/anthology/D19-5403.pdf
 4. sentence scoring and selection
 	* 3 steps
 5. evaluation
-
+	* 2 steps
 ### Additional
 * seq2seq to make sentences grammatical
 * Next sentence prediction
